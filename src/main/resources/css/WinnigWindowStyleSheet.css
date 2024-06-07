@@ -1,0 +1,64 @@
+#winnigWindowAnchorPane{
+    -fx-background-image: url("../images/Backround_Game_Stage_upscaled.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-max-width: 420;
+    -fx-min-width: 420;
+    -fx-max-height: 420;
+    -fx-min-height: 420;
+    -fx-pref-width: 420;
+    -fx-pref-height: 420;
+}
+#youWonLabel{
+    -fx-text-fill:rgb(236, 214, 141);
+    -fx-font-family: 'Bangers',cursive;
+    -fx-font-size: 25;
+}
+#winnerNamePassword {
+    -fx-text-fill:rgb(0, 0, 0);
+    -fx-font-family: 'Bangers', cursive;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-font-size: 16px; /* Beispielgröße, passen Sie diese nach Bedarf an */
+}
+
+#winnerNamePassword:focused {
+    -fx-font-family: 'Bangers', cursive;
+    -fx-font-size: 16px;
+}
+
+#winnerNamePassword .text-field {
+    -fx-font-family: 'Bangers', cursive;
+    -fx-font-size: 16px;
+}
+#submitWinningWindow{
+    -fx-background-radius: 30 30 30 30 ;
+    -fx-font-size: 25;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-background-color: rgb(236, 214, 141);
+}
+#classicAskPane{
+    -fx-background-image: url("../images/Backround_Game_Stage_upscaled.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+#exitGame{
+    -fx-background-radius: 30 30 30 30 ;
+    -fx-font-size: 25;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-background-color: rgb(236, 214, 141);
+}
+#continuePlayingButton{
+    -fx-background-radius: 30 30 30 30 ;
+    -fx-font-size: 25;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-background-color: rgb(236, 214, 141);
+}
+#classicGameInfoLabel{
+    -fx-text-fill:rgb(236, 214, 141);
+    -fx-font-family: 'Bangers',cursive;
+    -fx-font-size: 25;
+}
+

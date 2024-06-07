@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="winnigWindowAnchorPane" fx:id="winnigWindowAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.midterm.setfinal.winning.WinningWindowController">
+   <stylesheets><URL value="@../../../../css/WinnigWindowStyleSheet.css" /></stylesheets>
+   <children>
+      <Button id="submitWinningWindow" fx:id="submitWinningWindow" layoutX="111.0" layoutY="290.0" mnemonicParsing="false" onAction="#submitWinningWindowSetOnAction" prefHeight="97.0" prefWidth="199.0" styleClass="costumButton" text="submit">
+         <font>
+            <Font size="33.0" />
+         </font></Button>
+      <TextField id="winnerNamePassword" fx:id="winnerNamePassword" alignment="CENTER" layoutX="11.0" layoutY="147.0" onAction="#submitWinningWindowSetOnAction" opacity="0.48" prefHeight="90.0" prefWidth="399.0" promptText="Enter your name">
+         <font>
+            <Font size="23.0" />
+         </font></TextField>
+      <Label id="youWonLabel" fx:id="youWonLabel" alignment="CENTER" layoutX="61.0" layoutY="42.0" prefHeight="90.0" prefWidth="273.0" text="YOU WON!!!" textAlignment="CENTER">
+         <font>
+            <Font size="44.0" />
+         </font></Label>
+      <AnchorPane id="classicAskPane" fx:id="classicAskPane" prefHeight="420.0" prefWidth="420.0" visible="false">
+         <children>
+            <Button id="continuePlayingButton" fx:id="continuePlayingButton" layoutX="101.0" layoutY="222.0" mnemonicParsing="false" onAction="#continuePlayingButtonSetOnAction" text="Reshuffle deck" />
+            <Button id="exitGame" fx:id="exitGame" layoutX="128.0" layoutY="335.0" mnemonicParsing="false" onAction="#exitGameSetOnAction" text="exit Game" />
+            <Label id="classicGameInfoLabel" fx:id="classicGameInfoLabel" layoutX="77.0" layoutY="65.0" prefHeight="60.0" prefWidth="266.0" text="No Set Possible what you want to do?" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

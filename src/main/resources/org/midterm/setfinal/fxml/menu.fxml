@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="groundPane" fx:id="groundPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../../../../css/menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.midterm.setfinal.menu.MenuController">
+   <children>
+      <Pane id="imagePaneRightSite" fx:id="imagePaneRightSite" layoutX="388.0" layoutY="-1.0" prefHeight="727.0" prefWidth="695.0">
+         <children>
+            <AnchorPane id="leaderBoardPane" fx:id="leaderBoardPane" layoutX="46.0" layoutY="58.0" prefHeight="608.0" prefWidth="603.0" visible="false">
+               <children>
+                  <Label id="classicLabel" fx:id="classicLabel" layoutX="19.0" layoutY="14.0" styleClass="LeaderBoardLabel" text="Classic" wrapText="true" />
+                  <Label id="classicNameFirst" fx:id="classicNameFirst" layoutX="145.0" layoutY="43.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="classicNameSecond" fx:id="classicNameSecond" layoutX="289.0" layoutY="43.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="classicNameThird" fx:id="classicNameThird" layoutX="482.0" layoutY="43.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label layoutX="19.0" layoutY="158.0" styleClass="LeaderBoardLabel" text="One Deck" wrapText="true" />
+                  <Label id="OneDNameFirst" fx:id="OneDNameFirst" layoutX="145.0" layoutY="174.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="OneDNameSecond" fx:id="OneDNameSecond" layoutX="289.0" layoutY="174.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="OneDNameThird" fx:id="OneDNameThird" layoutX="482.0" layoutY="174.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label layoutX="19.0" layoutY="293.0" styleClass="LeaderBoardLabel" text="Best of 5" wrapText="true" />
+                  <Label id="bestOf5ScoreFirst" fx:id="bestOf5ScoreFirst" layoutX="145.0" layoutY="349.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf5ScoreSecond" fx:id="bestOf5ScoreSecond" layoutX="289.0" layoutY="349.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf5ScoreThird" fx:id="bestOf5ScoreThird" layoutX="482.0" layoutY="349.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label layoutX="19.0" layoutY="438.0" styleClass="LeaderBoardLabel" text="Best of 9" wrapText="true" />
+                  <Label id="bestOf9TimeFirst" fx:id="bestOf9TimeFirst" layoutX="145.0" layoutY="519.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf9TimeSecond" fx:id="bestOf9TimeSecond" layoutX="289.0" layoutY="519.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf9TimeThird" fx:id="bestOf9TimeThird" layoutX="482.0" layoutY="519.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="classicScoreFirst" fx:id="classicScoreFirst" layoutX="145.0" layoutY="80.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="classicTimeFirst" fx:id="classicTimeFirst" layoutX="145.0" layoutY="121.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="classicScoreSecond" fx:id="classicScoreSecond" layoutX="289.0" layoutY="80.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label fx:id="classicTimeSecond" layoutX="289.0" layoutY="121.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="classicScoreThird" fx:id="classicScoreThird" layoutX="482.0" layoutY="80.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label fx:id="classicTimeThird" layoutX="482.0" layoutY="121.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="OneDScoreFirst" fx:id="OneDScoreFirst" layoutX="145.0" layoutY="211.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="oneDeckTimeFirst" fx:id="oneDeckTimeFirst" layoutX="145.0" layoutY="249.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="Besto5NameFirst" fx:id="Besto5NameFirst" layoutX="145.0" layoutY="309.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="OneDScoreSecond" fx:id="OneDScoreSecond" layoutX="289.0" layoutY="211.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="oneDeckTimeSecond" fx:id="oneDeckTimeSecond" layoutX="289.0" layoutY="249.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="Besto5NameSecond" fx:id="Besto5NameSecond" layoutX="289.0" layoutY="309.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="OneDScoreThird" fx:id="OneDScoreThird" layoutX="482.0" layoutY="211.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="oneDeckTimeThird" fx:id="oneDeckTimeThird" layoutX="482.0" layoutY="249.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="Besto5NameThird" fx:id="Besto5NameThird" layoutX="482.0" layoutY="309.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf5TimeFirst" fx:id="bestOf5TimeFirst" layoutX="145.0" layoutY="386.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf9NameFirst" fx:id="bestOf9NameFirst" layoutX="145.0" layoutY="446.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf9ScoreFirst" fx:id="bestOf9ScoreFirst" layoutX="145.0" layoutY="482.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf5TimeSecond" fx:id="bestOf5TimeSecond" layoutX="289.0" layoutY="386.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf9NameSecond" fx:id="bestOf9NameSecond" layoutX="289.0" layoutY="446.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf9ScoreSecond" fx:id="bestOf9ScoreSecond" layoutX="289.0" layoutY="482.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf5TimeThird" fx:id="bestOf5TimeThird" layoutX="482.0" layoutY="386.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf9NameThird" fx:id="bestOf9NameThird" layoutX="482.0" layoutY="446.0" styleClass="LeaderBoardLabel" text="Label" />
+                  <Label id="bestOf9ScoreThird" fx:id="bestOf9ScoreThird" layoutX="482.0" layoutY="482.0" styleClass="LeaderBoardLabel" text="Label" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="newGamePane" fx:id="newGamePane" layoutX="46.0" layoutY="58.0" prefHeight="608.0" prefWidth="603.0" visible="false">
+               <children>
+                  <RadioButton id="playerAmount1" fx:id="playerAmount1" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" onAction="#selectAmountOfPlayer" prefWidth="105.0" styleClass="newGameAmountButtons" text="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="newGameButtons" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton id="playerAmount2" fx:id="playerAmount2" layoutX="14.0" layoutY="279.0" mnemonicParsing="false" onAction="#selectAmountOfPlayer" styleClass="newGameAmountButtons" text="2" toggleGroup="$newGameButtons" />
+                  <RadioButton id="playerAmount3" fx:id="playerAmount3" layoutX="14.0" layoutY="422.0" mnemonicParsing="false" onAction="#selectAmountOfPlayer" styleClass="newGameAmountButtons" text="3" toggleGroup="$newGameButtons" />
+                  <RadioButton id="playerAmount4" fx:id="playerAmount4" layoutX="14.0" layoutY="552.0" mnemonicParsing="false" onAction="#selectAmountOfPlayer" styleClass="newGameAmountButtons" text="4" toggleGroup="$newGameButtons" />
+                  <RadioButton id="bestOf9Button" fx:id="bestOf9Button" layoutX="462.0" layoutY="552.0" mnemonicParsing="false" onAction="#selectGameMode" styleClass="newGameAmountButtons" text="Best of 9">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="newGameButtonsGameMode" />
+                     </toggleGroup></RadioButton>
+                  <Label id="amountOfPLayerLabel" fx:id="amountOfPLayerLabel" layoutX="14.0" layoutY="14.0" prefHeight="90.0" prefWidth="251.0" styleClass="newGameLabel" text="Number of Player" textAlignment="CENTER" />
+                  <Label id="gameModeLabel" fx:id="gameModeLabel" layoutX="401.0" layoutY="14.0" prefHeight="90.0" prefWidth="188.0" styleClass="newGameLabel" text="Game Mode" textAlignment="CENTER" />
+                  <Button id="newGameSubmitButton" fx:id="newGameSubmitButton" layoutX="205.0" layoutY="516.0" mnemonicParsing="false" onAction="#newGameSubmitButtonSetOnaction" prefHeight="73.0" prefWidth="182.0" text="submit" />
+                  <RadioButton id="bestOf5Button" fx:id="bestOf5Button" layoutX="462.0" layoutY="422.0" mnemonicParsing="false" onAction="#selectGameMode" styleClass="newGameAmountButtons" text="Best of 5" toggleGroup="$newGameButtonsGameMode" />
+                  <ImageView fitHeight="363.0" fitWidth="347.0" layoutX="118.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/setBackroundLogo_upscaled_pure.png" />
+                     </image>
+                  </ImageView>
+                  <RadioButton id="classicModeRButton" fx:id="classicModeRButton" layoutX="462.0" layoutY="119.0" mnemonicParsing="false" onAction="#selectGameMode" styleClass="newGameAmountButtons" text="Classic" toggleGroup="$newGameButtonsGameMode" />
+                  <RadioButton id="oneDeckRButton" fx:id="oneDeckRButton" layoutX="462.0" layoutY="279.0" mnemonicParsing="false" onAction="#selectGameMode" prefHeight="27.0" prefWidth="134.0" text="One Deck" toggleGroup="$newGameButtonsGameMode">
+                     <styleClass>
+                        <String fx:value="n" />
+                        <String fx:value="newGameAmountButtons" />
+                     </styleClass>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="settingsPane" fx:id="settingsPane" layoutX="46.0" layoutY="58.0" prefHeight="608.0" prefWidth="603.0" visible="false">
+               <children>
+                  <Label id="currentSongLabel" fx:id="currentSongLabel" alignment="CENTER" layoutX="2.0" layoutY="14.0" prefHeight="80.0" prefWidth="589.0" text="Label" />
+                  <RadioButton id="vivaldiWinterButton" fx:id="vivaldiWinterButton" layoutX="2.0" layoutY="126.0" mnemonicParsing="false" onAction="#chooseMusicSetOnAction" styleClass="songButtons" text="Vivaldi Winter">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="currentSongButtons" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <CheckBox id="musicCheckBox" fx:id="musicCheckBox" layoutX="14.0" layoutY="259.0" mnemonicParsing="false" onAction="#musicButtonSetOnAction" selected="true" styleClass="settingsCheckBoxen" text="Music" />
+                  <CheckBox id="soundCheckBox" fx:id="soundCheckBox" layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#soundsButtonSetOnAction" selected="true" styleClass="settingsCheckBoxen" text="Sounds" />
+                  <Slider id="songSlider" fx:id="songSlider" layoutX="5.0" layoutY="501.0" prefHeight="16.0" prefWidth="589.0" />
+                  <ImageView fitHeight="363.0" fitWidth="347.0" layoutX="118.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/setBackroundLogo_upscaled_pure.png" />
+                     </image>
+                  </ImageView>
+                  <RadioButton id="vivaldiSpringButton" fx:id="vivaldiSpringButton" layoutX="448.0" layoutY="126.0" mnemonicParsing="false" onAction="#chooseMusicSetOnAction" styleClass="songButtons" text="Vivaldi Spring" toggleGroup="$currentSongButtons" />
+                  <RadioButton id="vivaldiSummerButton" fx:id="vivaldiSummerButton" layoutX="297.0" layoutY="126.0" mnemonicParsing="false" onAction="#chooseMusicSetOnAction" styleClass="songButtons" text="Vivaldi Summer" toggleGroup="$currentSongButtons" wrapText="true" />
+                  <RadioButton id="BachSonataButton" fx:id="BachSonataButton" layoutX="158.0" layoutY="126.0" mnemonicParsing="false" onAction="#chooseMusicSetOnAction" styleClass="songButtons" text="Bach Sonata" toggleGroup="$currentSongButtons" wrapText="true" />
+               </children>
+            </AnchorPane>
+            <ScrollPane id="rulesGroundPane" fx:id="rulesGroundPane" layoutX="46.0" layoutY="58.0" prefHeight="608.0" prefWidth="603.0" visible="false">
+              <content>
+                <AnchorPane id="infoScrolPane" fx:id="infoScrolPane" layoutX="46.0" layoutY="58.0" minHeight="0.0" minWidth="0.0" prefHeight="608.0" prefWidth="603.0">
+                     <children>
+                        <Text id="textInfo" fx:id="textInfo" fill="#ecd68d" strokeType="OUTSIDE" strokeWidth="0.0" text="Hier sind die Grundregeln des Spiels:Spielkarten: Es gibt 81 Karten im Spiel. Jede Karte hat vier Merkmale, die jeweils eine von drei möglichen Ausprägungen haben:Farbe: Rot, Grün, LilaForm: Oval, Welle, RauteMuster: Voll, schraffiert, leerAnzahl: Eins, zwei, drei SymboleZiel: Das Ziel des Spiels ist es, &quot;Sets&quot; zu finden. Ein Set besteht aus drei Karten, bei denen jedes der vier Merkmale entweder bei allen Karten gleich oder bei allen Karten unterschiedlich ist.Spielablauf:Zu Beginn werden 12 Karten offen auf den Tisch gelegt.Die Spieler suchen gleichzeitig nach Sets. Wenn ein Spieler ein Set findet, ruft er &quot;Set!&quot; und zeigt die drei Karten, die seiner Meinung nach ein Set bilden.Wenn das Set korrekt ist, nimmt der Spieler die drei Karten und drei neue Karten werden auf den Tisch gelegt.Wenn kein Set auf dem Tisch gefunden wird, werden drei zusätzliche Karten hinzugefügt, bis ein Set gefunden wird.Das Spiel endet, wenn der Kartenstapel aufgebraucht ist und keine Sets mehr auf dem Tisch liegen.Wertung: Der Spieler mit den meisten gefundenen Sets gewinnt das Spiel.                 " wrappingWidth="603.0" />
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+         </children></Pane>
+      <Pane id="setLogoPaneLeftSite" fx:id="setLogoPaneLeftSite" layoutX="7.0" prefHeight="303.0" prefWidth="388.0" />
+      <GridPane id="buttonGridVertikal" fx:id="buttonGridVertikal" layoutY="303.0" prefHeight="303.0" prefWidth="94.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="newGameButton" fx:id="newGameButton" mnemonicParsing="false" onAction="#newGameButtonAction" onMouseEntered="#newGameMouseEntered" onMouseExited="#newGameMouseExited" prefHeight="88.0" prefWidth="137.0" styleClass="menuButtons" />
+            <Button id="loadGameButton" fx:id="loadGameButton" mnemonicParsing="false" onAction="#loadGameButtonSetOnAction" onMouseEntered="#loadgameMouseEntered" onMouseExited="#loadgameMouseExited" prefHeight="99.0" prefWidth="137.0" styleClass="menuButtons" GridPane.rowIndex="1" />
+            <Button id="leaderBoardButton" fx:id="leaderBoardButton" mnemonicParsing="false" onAction="#leaderBoardButtonAction" onMouseEntered="#LeaderboardMouseEntered" onMouseExited="#leaderboardMouseExited" prefHeight="107.0" prefWidth="137.0" styleClass="menuButtons" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label id="infoLabel" fx:id="infoLabel" layoutX="137.0" layoutY="303.0" prefHeight="303.0" prefWidth="251.0" rotate="-29.7" textAlignment="CENTER" wrapText="true" />
+      <GridPane alignment="TOP_RIGHT" layoutX="-4.0" layoutY="618.0" prefHeight="101.0" prefWidth="347.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="133.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="10.0" prefWidth="124.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="quitButton" fx:id="quitButton" mnemonicParsing="false" onAction="#quitButtonSetOnAction" onMouseEntered="#quitMouseEntered" onMouseExited="#quitMouseExited" prefHeight="42.0" prefWidth="127.0" styleClass="menuButtons" />
+            <Button id="settingsButton" fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsButtonAction" onMouseEntered="#settingsMouseEntered" onMouseExited="#settingsMouseExited" prefHeight="115.0" prefWidth="170.0" styleClass="menuButtons" GridPane.columnIndex="1" />
+            <Button id="rulesButton" fx:id="rulesButton" mnemonicParsing="false" onAction="#rulesButtonSetOnAction" onMouseEntered="#rulesMouseEntered" onMouseExited="#rulesMouseExited" prefHeight="113.0" prefWidth="121.0" styleClass="menuButtons" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane id="mainGrid" fx:id="mainGrid" alignment="CENTER" cacheShape="false" focusTraversable="true" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1080.0" stylesheets="@../../../../css/game.css" vgap="5.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.midterm.setfinal.gamePackage.GameController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints percentWidth="12.5" />
+      <ColumnConstraints percentWidth="12.5" />
+      <ColumnConstraints percentWidth="12.5" />
+      <ColumnConstraints percentWidth="12.5" />
+      <ColumnConstraints percentWidth="12.5" />
+      <ColumnConstraints percentWidth="12.5" />
+      <ColumnConstraints percentWidth="12.5" />
+      <ColumnConstraints percentWidth="12.5" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints percentHeight="33.33" />
+      <RowConstraints percentHeight="33.33" />
+      <RowConstraints percentHeight="33.33" />
+   </rowConstraints>
+   <children>
+      <Button id="button1" fx:id="button1" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="2" />
+      <Button id="button4" fx:id="button4" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="3" />
+      <Button id="button7" fx:id="button7" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="4" />
+      <Button id="button10" fx:id="button10" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="5" />
+      <Button id="button13" fx:id="button13" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="6" />
+      <Button id="button2" fx:id="button2" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button id="button3" fx:id="button3" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button id="button5" fx:id="button5" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Button id="button6" fx:id="button6" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button id="button8" fx:id="button8" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Button id="button9" fx:id="button9" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <Button id="button11" fx:id="button11" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Button id="button12" fx:id="button12" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+      <Button id="button14" fx:id="button14" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <Button id="button15" fx:id="button15" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+      <GridPane id="buttonGrid" fx:id="buttonGrid" hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="buttonPane" vgap="5.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints percentWidth="100" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints percentHeight="50" />
+            <RowConstraints minHeight="10.0" percentHeight="50.0" prefHeight="30.0" />
+            <RowConstraints percentHeight="50" />
+         </rowConstraints>
+         <children>
+            <Button id="saveExitButton" fx:id="saveExitButton" onAction="#saveAndExitButtonSetOnAction" styleClass="costumButton" text="save exit " textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+            <Button id="drawcardButton" fx:id="drawcardButton" onAction="#drawcardButtonSetOnAction" styleClass="costumButton" text="draw card" textAlignment="CENTER" wrapText="true" />
+            <Button id="menuButton" fx:id="menuButton" onAction="#menuButtonSetOnAction" styleClass="costumButton" text="Menu" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Pane id="cardBackImagePane" fx:id="cardBackImagePane" onMouseEntered="#remainingCardsDeckLabelMouseEntered" onMouseExited="#setRemainingCardsDeckLabelMouseExit" prefHeight="146.0" prefWidth="130.0" styleClass="cardBackImagePane" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button id="button16" fx:id="button16" mnemonicParsing="false" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="7" />
+      <Button id="button17" fx:id="button17" mnemonicParsing="false" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+      <Button id="button18" fx:id="button18" mnemonicParsing="false" onAction="#cardActionSetOnAction" styleClass="cardButton" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+      <Pane id="playerPane1" fx:id="playerPane1" prefHeight="155.0" prefWidth="130.0" styleClass="playerPanes" GridPane.columnIndex="1">
+         <children>
+            <Label id="playerLabel1" fx:id="playerName1" alignment="TOP_LEFT" prefHeight="40.0" prefWidth="130.0" styleClass="playerLabels" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label id="timerLabel" fx:id="timerLabel" layoutY="153.0" prefHeight="84.0" prefWidth="126.0" text="besipiel" visible="false" />
+         </children>
+      </Pane>
+      <Pane id="playerPane2" fx:id="playerPane2" prefHeight="200.0" prefWidth="200.0" styleClass="playerPanes" GridPane.columnIndex="8">
+         <children>
+            <Label id="playerLabel2" fx:id="playerName2" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="-1.0" layoutY="4.0" prefHeight="46.0" prefWidth="130.0" styleClass="playerLabels" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Label id="playerLabel3" fx:id="playerName3" alignment="TOP_LEFT" prefHeight="31.0" prefWidth="126.0" styleClass="playerLabels" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label id="remainingCardsDeckLabel" fx:id="remainingCardsDeckLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="135.0" onMouseEntered="#remainingCardsDeckLabelMouseEntered" onMouseExited="#setRemainingCardsDeckLabelMouseExit" prefHeight="84.0" prefWidth="126.0" text="42" textAlignment="CENTER" visible="false" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="2">
+         <children>
+            <Label id="playerLabel4" fx:id="playerName4" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="25.0" prefWidth="127.0" styleClass="playerLabels" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button id="submitSetButton" fx:id="submitSetButton" layoutX="2.0" layoutY="126.0" mnemonicParsing="false" onAction="#confirmSetSubmitButtonSetOnAction" prefHeight="46.0" prefWidth="120.0" styleClass="costumButton" text="submit" visible="false" AnchorPane.bottomAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

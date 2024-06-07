@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+
+
+
+.newGameAmountButtons{
+    -fx-font-size: 20;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-text-fill: rgb(236, 214, 141);
+}
+.newGameLabel{
+    -fx-font-size: 25;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-text-fill: rgb(236, 214, 141);
+}
+
+#leaderBoardPane{
+    -fx-background-image: url("../images/Backround_Game_Stage_upscaled.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+
+#settingsPane{
+    -fx-background-image: url("../images/Backround_Game_Stage_upscaled.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+.songButtons{
+    -fx-font-size: 20;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-text-fill: rgb(236, 214, 141);
+}
+
+
+#currentSongLabel{
+    -fx-font-size: 40;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-text-fill: rgb(236, 214, 141);
+}
+.settingsCheckBoxen{
+    -fx-font-size: 20;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-text-fill: rgb(236, 214, 141);
+}
+
+
+.LeaderBoardLabel {
+    -fx-font-size: 25;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-text-fill: rgb(236, 214, 141);
+}
+
+#newGameSubmitButton{
+    -fx-font-size: 25;
+    -fx-background-radius: 30 30 30 30 ;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-background-color: rgb(236, 214, 141);
+}
+
+
+#newGamePane{
+    -fx-background-image: url("../images/Backround_Game_Stage_upscaled.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+#textPane{
+    -fx-background-image: url("../images/Backround_Game_Stage_upscaled.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+#groundPane{
+    -fx-background-color: rgb(0, 0, 0);
+}
+
+#imagePaneRightSite{
+    -fx-background-image: url("../images/setBackroundLogo_upscaled.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+#setLogoPaneLeftSite{
+    -fx-background-image: url("../images/setLogoNew.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+#infoLabel{
+    -fx-font-size: 70;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-text-fill: rgb(40, 76, 13);
+}
+
+.menuButtons{
+    -fx-max-height: infinity;
+    -fx-max-width:infinity;
+    -fx-background-color: rgb(0,0,0);
+}
+#newGameButton{
+    -fx-background-image: url("../images/newGameButton_upscaled.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+#loadGameButton{
+    -fx-background-image: url("../images/loadGameButton_upscaled.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+#rulesButton{
+    -fx-background-image: url("../images/instructionsButton_upscaled.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+#leaderBoardButton{
+    -fx-background-image: url("../images/leaderBoardButton.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+#settingsButton{
+    -fx-background-image: url("../images/settingsButton_upscaled.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+#quitButton{
+    -fx-background-image: url("../images/quitButton.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+#infoScrolPane{
+    -fx-background-image: url("../images/Backround_Game_Stage_upscaled.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+#textInfo{
+    -fx-font-size: 35;
+    -fx-background-radius: 30 30 30 30 ;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-background-size: 100% 100%;
+}
+
+

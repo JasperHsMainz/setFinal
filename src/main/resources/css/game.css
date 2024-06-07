@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+
+
+.cardButton{
+    -fx-max-height: "infinity";
+    -fx-max-width: "infinity";
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.root{
+    -fx-background-image: url("../images/Backround_Game_Stage_upscaled.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-max-width: 1080;
+    -fx-min-width: 1080;
+    -fx-max-height: 720;
+    -fx-min-height: 720;
+    -fx-pref-width: 1080;
+    -fx-pref-height: 720;
+}
+
+#timerLabel{
+    -fx-text-fill:rgb(236, 214, 141);
+    -fx-font-family: 'Bangers',cursive;
+}
+
+
+.costumButton{
+    -fx-max-height: "infinity";
+    -fx-max-width: "infinity";
+    -fx-font-size: 25;
+    -fx-background-radius: 30 30 30 30 ;
+    -fx-font-family: 'Bangers',cursive;
+    -fx-background-color: rgb(236, 214, 141);
+}
+
+#cardBackImagePane{
+    -fx-background-image: url("../images/setCardBack_upscaled.png");
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+.playerLabels{
+
+    -fx-text-fill:rgb(236, 214, 141);
+    -fx-font-family: 'Bangers',cursive;
+}
+#remainingCardsDeckLabel{
+    -fx-text-fill:rgb(236, 214, 141);
+    -fx-font-family: 'Bangers',cursive;
+
+}
+
+
+
+
