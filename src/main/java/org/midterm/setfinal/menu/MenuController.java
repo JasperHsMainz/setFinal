@@ -272,7 +272,6 @@ public class MenuController {
                     Scene scene = new Scene(loader.load());
                     Stage currentStage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
                     currentStage.setScene(scene);
-                    currentStage.getIcons().add(new Image(getClass().getResourceAsStream("/images/setGameIcon.png")));
                     currentStage.setResizable(true);
                     currentStage.setFullScreen(true);
 
@@ -305,7 +304,6 @@ public class MenuController {
                     Scene scene = new Scene(loader.load());
                     Stage currentStage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
                     currentStage.setScene(scene);
-                    currentStage.getIcons().add(new Image(getClass().getResourceAsStream("/images/setGameIcon.png")));
                     currentStage.setResizable(true);
                     currentStage.setFullScreen(true);
 

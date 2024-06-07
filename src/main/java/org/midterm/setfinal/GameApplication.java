@@ -3,6 +3,7 @@ package org.midterm.setfinal;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.midterm.setfinal.GameLogic.SoundPlayer;
 import org.midterm.setfinal.serialize.DAOSerialize;
@@ -22,6 +23,7 @@ public class GameApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(GameApplication.class.getResource(fxmlPath));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("SET");
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/images/setGameIcon.png")));
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();

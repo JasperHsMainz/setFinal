@@ -67,7 +67,6 @@ public class WinningWindowController {
         GameController.assignImagesToButtons();
         MenuController.addUserKeyListener(scene);
         stage.setScene(scene);
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("/images/setGameIcon.png")));
         stage.setResizable(true);
         stage.setFullScreen(true);
         stage.setMinHeight(720);
