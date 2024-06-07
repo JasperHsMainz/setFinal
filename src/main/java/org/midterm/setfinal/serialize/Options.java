@@ -9,7 +9,7 @@ public class Options implements Serializable {
     private Boolean listenToBackroundMusic = true;
     private Boolean listenToButtonSounds = true;
     private Integer currentSongIndex = 1;
-    private String currentSongTitle = "Vivaldi Winter";
+    private String currentSongTitle = "Bach Sonata";
     private double volume = 50;
     private transient StringProperty songTitle = new SimpleStringProperty(currentSongTitle);
 
