@@ -40,6 +40,7 @@ public class WinningWindowController {
         Scene scene = new Scene(fxmlLoader2.load());
         stage = currentStage;
         stage.setResizable(false);
+        stage.setFullScreen(false);
         stage.setScene(scene);
         stage.setMinHeight(420);
         stage.setMinWidth(420);

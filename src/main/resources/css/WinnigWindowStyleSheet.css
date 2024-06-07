@@ -3,12 +3,7 @@
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
     -fx-background-size: 100% 100%;
-    -fx-max-width: 420;
-    -fx-min-width: 420;
-    -fx-max-height: 420;
-    -fx-min-height: 420;
-    -fx-pref-width: 420;
-    -fx-pref-height: 420;
+
 }
 #youWonLabel{
     -fx-text-fill:rgb(236, 214, 141);
