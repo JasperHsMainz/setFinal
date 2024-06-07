@@ -52,9 +52,8 @@ public class MenuController {
     @FXML
     private Slider songSlider;
 
-    
-    private static Boolean playerAmountIsSelected = false;
-    private static Boolean gameModeIsSelected = false;
+    private static Boolean playerAmountIsSelected;
+    private static Boolean gameModeIsSelected;
 
 
     public static Boolean getGameModeIsSelected() {
@@ -67,6 +66,8 @@ public class MenuController {
 
     @FXML
     public void initialize() {
+        playerAmountIsSelected = false;
+        gameModeIsSelected = false;
         bindOptions();
         bindClassicLeaderBoard();
         bindOneDeckLeaderBoard();
@@ -256,7 +257,8 @@ public class MenuController {
         SoundPlayer.buttonClickSound();
         System.out.println("newGameSubmitButtonSetOnaction called");
         Button b = (Button) event.getSource();
-        if (playerAmountIsSelected== true && gameModeIsSelected == true){
+        if (playerAmountIsSelected && gameModeIsSelected){
+            System.out.println("newGameSubmitButtonSetOnAction:  PlayerAmountIsSelected = " + playerAmountIsSelected + " GameModeIsSelected = " + gameModeIsSelected);
             playerAmountIsSelected = false;
             gameModeIsSelected = false;
             if (b.getId() == newGameSubmitButton.getId())
