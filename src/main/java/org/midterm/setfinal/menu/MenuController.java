@@ -153,6 +153,7 @@ public class MenuController {
     }
 
     private void bindOptions(){
+        currentSongLabel.setText(GameApplication.getSerializeObject().getOptions().getCurrentSongTitle());
         if (!GameApplication.getSerializeObject().getOptions().getListenToBackroundMusic()){
             musicCheckBox.setSelected(false);
         }
