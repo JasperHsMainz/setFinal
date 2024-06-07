@@ -256,6 +256,8 @@ public class MenuController {
         System.out.println("newGameSubmitButtonSetOnaction called");
         Button b = (Button) event.getSource();
         if (playerAmountIsSelected && gameModeIsSelected){
+            playerAmountIsSelected = false;
+            gameModeIsSelected = false;
             if (b.getId() == newGameSubmitButton.getId())
 
                 GameApplication.getSerializeObject().generateGameState(selectAmountOfPlayer(),selectGameMode());
