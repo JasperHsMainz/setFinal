@@ -100,8 +100,8 @@ public class GameLogic {
                 }
             }else {
                 decreasePlayerScore(GameApplication.getSerializeObject().getGameState().getChoosingPlayer());
-                //GameApplication.getSerializeObject().getGameState().setBestOfCounter(GameApplication.getSerializeObject().getGameState().getBestOfCounter()-1);
-                //System.out.println("ChoosingComplete: bestOfCounter reduced to: "+GameApplication.getSerializeObject().getGameState().getBestOfCounter());
+                GameApplication.getSerializeObject().getGameState().setBestOfCounter(GameApplication.getSerializeObject().getGameState().getBestOfCounter()-1);
+                System.out.println("ChoosingComplete: bestOfCounter reduced to: "+GameApplication.getSerializeObject().getGameState().getBestOfCounter());
                 System.out.println("SetCheck: false");
             }
             GameController.hideConfirmSetButton();
@@ -165,6 +165,7 @@ public class GameLogic {
                 break;
             case "bestOf5":
                 if (endBestOf5()) {
+
                     System.out.println("BestOf5 End Reached");
                     GameApplication.getSerializeObject().getGameState().calculateHighScoreTotalTimeElaplsed();
                     GameController.openWinnerWindow();
