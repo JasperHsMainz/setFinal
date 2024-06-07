@@ -256,7 +256,7 @@ public class MenuController {
         SoundPlayer.buttonClickSound();
         System.out.println("newGameSubmitButtonSetOnaction called");
         Button b = (Button) event.getSource();
-        if (playerAmountIsSelected && gameModeIsSelected){
+        if (playerAmountIsSelected== true && gameModeIsSelected == true){
             playerAmountIsSelected = false;
             gameModeIsSelected = false;
             if (b.getId() == newGameSubmitButton.getId())
@@ -273,8 +273,7 @@ public class MenuController {
                     currentStage.getIcons().add(new Image(getClass().getResourceAsStream("/images/setGameIcon.png")));
                     currentStage.setResizable(true);
                     currentStage.setFullScreen(true);
-                    currentStage.setMinHeight(720);
-                    currentStage.setMinWidth(1280);
+
 
                     currentStage.setTitle("SET");
                     GameApplication.getSerializeObject().clearChoosingVariables(); //Clears alls choosing Variables
