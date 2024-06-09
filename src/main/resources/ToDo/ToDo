@@ -7,21 +7,22 @@
 [x] cheat
 [x] addToLeaderBoard
 [] GameEnd in GameLogic
-    [] testForEnd()
-        []endClassic()
-            [] wahscheinlich fehler in setPossible()?
+    [x] testForEnd()
+        [x]endClassic()
+            [x] wahscheinlich fehler in setPossible()?
         [x]bestOf5()
         [x]bestOf9()
-        []endOneDeck()
-[] sound
-    [] volumeSlider
-    [] radioButtons selected
+        [x]endOneDeck()
+[x] sound
+    [x] volumeSlider
+    [x] radioButtons selected
 [] In game Timer
     [x] overall Timer
     [] playerTurnTimer
+    [] wenn timer läuft und man in das menü geht verliert man einen punkt
 
 
 Fun Stuff
 [] Bot
 [] Show winning Player Number in WinningWindow
-[]
+[] puzzel
