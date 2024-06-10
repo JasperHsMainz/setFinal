@@ -6,6 +6,7 @@
 [x] what happens on save and exit?
 [x] cheat
 [x] addToLeaderBoard
+[] draw3cards wirft fehler wenn keine karten mehr im deck sind
 [] GameEnd in GameLogic
     [x] testForEnd()
         [x]endClassic()
@@ -13,8 +14,9 @@
         [x]bestOf5()
         [x]bestOf9()
         [x]endOneDeck()
-[x] sound
-    [x] volumeSlider
+[] sound
+    [] volumeSlider
+        []volumeSlider mediaplayer ist manchmal null (noch nicht reproduzierbarer Fehler)
     [x] radioButtons selected
 [] In game Timer
     [x] overall Timer
