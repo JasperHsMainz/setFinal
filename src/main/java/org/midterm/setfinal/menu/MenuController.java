@@ -68,15 +68,18 @@ public class MenuController {
     public void initialize() {
         playerAmountIsSelected = false;
         gameModeIsSelected = false;
+        bindSongSlider();
         bindOptions();
         bindClassicLeaderBoard();
         bindOneDeckLeaderBoard();
         bindBestOf5leaderBoard();
         bindBestOf9LeaderBoard();
-        bindSongSlider();
     }
 
+
+
     private void bindSongSlider(){
+
 
         songSlider.setValue(GameApplication.getSerializeObject().getOptions().getVolume());
         songSlider.valueProperty().addListener(new ChangeListener<Number>() {
@@ -272,6 +275,8 @@ public class MenuController {
                     Scene scene = new Scene(loader.load());
                     Stage currentStage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
                     currentStage.setScene(scene);
+                    currentStage.setMinHeight(720);
+                    currentStage.setMinWidth(1280);
                     currentStage.setResizable(true);
                     currentStage.setFullScreen(true);
 

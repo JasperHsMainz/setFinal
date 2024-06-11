@@ -6,6 +6,7 @@
 [x] what happens on save and exit?
 [x] cheat
 [x] addToLeaderBoard
+[] gameScene minWidth und Height
 [] draw3cards wirft fehler wenn keine karten mehr im deck sind
 [] GameEnd in GameLogic
     [x] testForEnd()
