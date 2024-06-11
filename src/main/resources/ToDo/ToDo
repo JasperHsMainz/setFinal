@@ -40,3 +40,16 @@ Fun Stuff
     [] MenuScene PuzzleScene Button
     [] PuzzleScene
     [] PuzzleLogic
+[] Hint methode (cheat umbauen)
+[] Draw3Extra auf das deck legen
+[] Hint auf alte Draw3extra position
+[] Rules Pane muss UNSER Spiel erklären
+    [] player "Buzzers"
+    [] Draw3Extra methode
+    [] Remaining cards wenn man überm deck hovert
+    [] Game end definitionen
+        [] best of modis
+        [] classic
+        [] one deck
+        [] Puzzle
+    [] Hint
