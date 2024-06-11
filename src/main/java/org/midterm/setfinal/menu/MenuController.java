@@ -78,18 +78,27 @@ public class MenuController {
 
 
 
-    private void bindSongSlider(){
-
-
+    private void bindSongSlider() {
         songSlider.setValue(GameApplication.getSerializeObject().getOptions().getVolume());
         songSlider.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
-            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
-                SoundPlayer.getMusicPlayer().setVolume(songSlider.getValue() * 0.01);
-                GameApplication.getSerializeObject().getOptions().setVolume(songSlider.getValue());
+            public void changed(ObservableValue<? extends Number> observableValue, Number oldValue, Number newValue) {
+                try {
+                    MediaPlayer musicPlayer = SoundPlayer.getMusicPlayer();
+                    if (musicPlayer != null) {
+                        musicPlayer.setVolume(songSlider.getValue() * 0.01);
+                        GameApplication.getSerializeObject().getOptions().setVolume(songSlider.getValue());
+                    } else {
+                        throw new NullPointerException("Music player is not initialized.");
+                    }
+                } catch (NullPointerException e) {
+                    System.err.println("Error: " + e.getMessage());
+                    System.out.println("bidSongSlider: Soundplayer.getMediaplayer = null");
+                }
             }
         });
     }
+
 
 
 
@@ -313,6 +322,8 @@ public class MenuController {
                     currentStage.setFullScreen(true);
 
                     currentStage.setTitle("SET");
+                    currentStage.setMinWidth(1080);
+                    currentStage.setMinHeight(720);
                     GameApplication.getSerializeObject().clearChoosingVariables();
                     GameController.assignImagesToButtons();
                     addUserKeyListener(scene);

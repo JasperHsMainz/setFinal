@@ -6,26 +6,37 @@
 [x] what happens on save and exit?
 [x] cheat
 [x] addToLeaderBoard
-[] gameScene minWidth und Height
-[] draw3cards wirft fehler wenn keine karten mehr im deck sind
-[] GameEnd in GameLogic
+[x] gameScene minWidth und Height
+    [x] setWith & Height
+        [x] newGameSubmit
+        [x] loadGame
+        [x] generateDeck(WinningScene)
+    [x] resetMin & Height
+        [x] Menu (GameScene)
+        [x] toWinningScene (WinningWindow)
+        [x] exit (WinningScene)
+[x] draw3cards wirft fehler wenn keine karten mehr im deck sind
+[x] GameEnd in GameLogic
     [x] testForEnd()
         [x]endClassic()
             [x] wahscheinlich fehler in setPossible()?
         [x]bestOf5()
         [x]bestOf9()
         [x]endOneDeck()
-[] sound
-    [] volumeSlider
-        []volumeSlider mediaplayer ist manchmal null (noch nicht reproduzierbarer Fehler)
+[x] sound
+    [x] volumeSlider
+        [x]volumeSlider mediaplayer ist manchmal null (noch nicht reproduzierbarer Fehler)
     [x] radioButtons selected
-[] In game Timer
+[x] In game Timer
     [x] overall Timer
-    [] playerTurnTimer
-    [] wenn timer läuft und man in das menü geht verliert man einen punkt
+    [x] playerTurnTimer
+    [x] wenn timer läuft und man in das menü geht verliert man einen punkt
 
 
 Fun Stuff
 [] Bot
 [] Show winning Player Number in WinningWindow
-[] puzzel
+[] puzzle
+    [] MenuScene PuzzleScene Button
+    [] PuzzleScene
+    [] PuzzleLogic

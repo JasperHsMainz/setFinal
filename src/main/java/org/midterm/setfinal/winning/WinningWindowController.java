@@ -39,6 +39,8 @@ public class WinningWindowController {
         FXMLLoader fxmlLoader2 = new FXMLLoader(WinningWindowController.class.getResource("/org/midterm/setfinal/fxml/winnerWindow.fxml"));
         Scene scene = new Scene(fxmlLoader2.load());
         stage = currentStage;
+        stage.setWidth(420);
+        stage.setHeight(460);
         stage.setResizable(false);
         stage.setFullScreen(false);
         stage.setScene(scene);
@@ -100,6 +102,8 @@ public class WinningWindowController {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(GameApplication.getFxmlPath()));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);
+            stage.setWidth(1080);
+            stage.setHeight(760);
             stage.setResizable(false);
             stage.show();
         }

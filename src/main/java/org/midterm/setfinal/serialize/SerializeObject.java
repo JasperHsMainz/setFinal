@@ -23,6 +23,8 @@ public class SerializeObject implements Serializable {
         gameState.setChoosingPlayer(-1);
         gameState.setChoosenCards(new ArrayList<>());
         gameState.setCurrentlyChoosing(false);
+        gameState.setTurnTimerProperty(0);
+        gameState.setTurnActive(false);
     }
 
     //Generate

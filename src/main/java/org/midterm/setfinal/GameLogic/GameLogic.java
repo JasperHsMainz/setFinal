@@ -300,18 +300,22 @@ public class GameLogic {
     public static void draw3Extra(){//Called by drawButton
         System.out.println("draw3Extra called");
         int counter = 0;
-        for (int i = 0; i < 18; i++) {
-            if (GameApplication.getSerializeObject().getGameState().getDisplayedCards().get(i)==null){
-                GameApplication.getSerializeObject().getGameState().getDisplayedCards().set(i,GameApplication.getSerializeObject().getGameState().getDeck().getFirst());
-                GameApplication.getSerializeObject().getGameState().getDeck().removeFirst();
-                GameApplication.getSerializeObject().getGameState().getDeckSizeProperty().set(GameApplication.getSerializeObject().getGameState().getDeck().size());
-                counter++;
+        if(GameApplication.getSerializeObject().getGameState().getDeck().size()>=3) {
+            for (int i = 0; i < 18; i++) {
+                if (GameApplication.getSerializeObject().getGameState().getDisplayedCards().get(i) == null) {
+                    GameApplication.getSerializeObject().getGameState().getDisplayedCards().set(i, GameApplication.getSerializeObject().getGameState().getDeck().getFirst());
+                    GameApplication.getSerializeObject().getGameState().getDeck().removeFirst();
+                    GameApplication.getSerializeObject().getGameState().getDeckSizeProperty().set(GameApplication.getSerializeObject().getGameState().getDeck().size());
+                    counter++;
+                }
+                if (counter == 3)
+                    break;
             }
-            if (counter == 3)
-                break;
+            GameController.assignImagesToButtons();//refreshes Screen
         }
-        GameController.assignImagesToButtons();//refreshes Screen
-        //printDisplayedCards();
+        else {
+            System.out.println("draw3Extra failed: Not enough cards in deck");
+        }
     }
 
     public static void reshuffleDisplayedCards(){//Called each Time drawTo12() is called

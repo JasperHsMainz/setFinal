@@ -210,7 +210,8 @@ private static Label[] staticTimerLabel;
     @FXML
     private void saveAndExitButtonSetOnAction(){
         SoundPlayer.buttonClickSound();
-        GameApplication.getSerializeObject().getGameState().calculateHighScoreTotalTimeElaplsed();
+        GameApplication.getSerializeObject().getGameState().calculateHighScoreTotalTimeElaplsed(); //Calculates current highscoreTime for serialization
+        //GameApplication.getSerializeObject().clearChoosingVariables(); //Clears choosing and stops TurnTimerThread
         DAOSerialize.writeSerialized(GameApplication.getSerializeObject());
         System.exit(0);
     }
@@ -218,7 +219,8 @@ private static Label[] staticTimerLabel;
     @FXML
     private void menuButtonSetOnAction(ActionEvent event) throws IOException {
         SoundPlayer.buttonClickSound();
-        GameApplication.getSerializeObject().getGameState().calculateHighScoreTotalTimeElaplsed();
+        GameApplication.getSerializeObject().getGameState().calculateHighScoreTotalTimeElaplsed(); //Calculates current highscoreTime for serialization
+        GameApplication.getSerializeObject().clearChoosingVariables(); //Clears choosing and stops TurnTimerThread
         DAOSerialize.writeSerialized(GameApplication.getSerializeObject());
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/org/midterm/setfinal/fxml/menu.fxml"));
         Scene gameScene = new Scene(fxmlLoader.load());
@@ -226,6 +228,8 @@ private static Label[] staticTimerLabel;
 
         currentStage.setScene(gameScene);
         currentStage.getIcons().add(new Image(getClass().getResourceAsStream("/images/setGameIcon.png")));
+        currentStage.setWidth(1080);
+        currentStage.setHeight(760);
         currentStage.setResizable(false);
         currentStage.setTitle("SET");
         currentStage.show();
