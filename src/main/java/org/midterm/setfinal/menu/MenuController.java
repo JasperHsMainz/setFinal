@@ -309,6 +309,7 @@ public class MenuController {
         System.out.println("LoadGameButtonSetOnAction called");
         Button b = (Button) event.getSource();
 
+
         GameApplication.getSerializeObject().prepForLoad();
 
             if (b.getId() == loadGameButton.getId())
@@ -324,6 +325,7 @@ public class MenuController {
                     currentStage.setTitle("SET");
                     currentStage.setMinWidth(1080);
                     currentStage.setMinHeight(720);
+
                     GameApplication.getSerializeObject().clearChoosingVariables();
                     GameController.assignImagesToButtons();
                     addUserKeyListener(scene);

@@ -71,7 +71,6 @@ public class SoundPlayer {
             musicPlayer.play();
         }
     }
-
     }
 
     public static void playSoundEffect(String soundFileName) {

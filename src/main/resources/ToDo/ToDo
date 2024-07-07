@@ -6,7 +6,7 @@
 [x] what happens on save and exit?
 [x] cheat
 [x] addToLeaderBoard
-[x] gameScene minWidth und Height
+[] gameScene minWidth und Height
     [x] setWith & Height
         [x] newGameSubmit
         [x] loadGame
@@ -15,6 +15,7 @@
         [x] Menu (GameScene)
         [x] toWinningScene (WinningWindow)
         [x] exit (WinningScene)
+    [] Funkt nicht bei Windows
 [x] draw3cards wirft fehler wenn keine karten mehr im deck sind
 [x] GameEnd in GameLogic
     [x] testForEnd()
